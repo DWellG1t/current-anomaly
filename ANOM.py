@@ -9,9 +9,9 @@ import asyncio
 import datetime
 import colorama
 
-# token: 5351790249:AAFG1rDmEEAyn_n-PqMak56rSYw9Tufhr5k
+# token: 
 # api: https://api.telegram.org/bot
-# res: https://api.telegram.org/bot5369651116:AAEq6ASLiXU9meQJtMg8hFBqeke_MfRCJzE/sendMessage?chat_id=5011225208&text=''
+# res: 
 
 # "iMa":   295, - current
 # "iWa":   64,  - active
@@ -25,7 +25,7 @@ async def req():
 
 def main(inp = None):
 
-    requests.get("https://api.telegram.org/bot5351790249:AAFG1rDmEEAyn_n-PqMak56rSYw9Tufhr5k/sendMessage?chat_id=1023337472&text=")
+    requests.get("https://api.telegram.org/ /sendMessage?chat_id=1023337472&text=")
 
     testVal = {"iMa": list(range(293, 296)), "iWa": list(range(60, 65)), "iVA": list(range(62, 66)), "iVar": list(range(-11, -8))}
 
@@ -42,11 +42,11 @@ def main(inp = None):
 
     if (fetch[0] > inp['iMa'] or fetch[1] < inp['iMa']) or (fetch[2] > inp['iWa'] or fetch[3] < inp['iWa']) or (fetch[4] > inp['iVA'] or fetch[5] < inp['iVA']) or (fetch[6] > inp['iVar'] or fetch[7] < inp['iVar']):
         txt = f"Warning!\nSName: KrepkiyLob\niMa: {inp['iMa']}\niWa: {inp['iWa']}\niVA1: {inp['iVA']}\niVar: {inp['iVar']}"
-        requests.get(f"https://api.telegram.org/bot5369651116:AAEq6ASLiXU9meQJtMg8hFBqeke_MfRCJzE/sendMessage?chat_id=5011225208&text={txt}")
+        requests.get(f"https://api.telegram.org/ /sendMessage?chat_id=5011225208&text={txt}")
         print(colorama.Fore.LIGHTRED_EX, txt)
     else:
         print(f'{colorama.Fore.LIGHTCYAN_EX}All is okay')
-        requests.get("https://api.telegram.org/bot5369651116:AAEq6ASLiXU9meQJtMg8hFBqeke_MfRCJzE/sendMessage?chat_id=5011225208&text=All is okay!")
+        requests.get("https://api.telegram.org/ /sendMessage?chat_id=5011225208&text=All is okay!")
 
 # Main
 if __name__ == "__main__":
